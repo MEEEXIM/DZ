@@ -9,9 +9,9 @@ class cars:
     def T(self, a):
         c=a/self.V
         print(c)
-car1 = cars('Russia', '1st', 1999, 130)
-car2 = cars('USA', '2nd', 2015, 160)
-car3 = cars('Russia', '2nd', 2021, 250)
+car1 = cars('Russia', '1stmodel', 1999, 130)
+car2 = cars('USA', '2nd model', 2015, 160)
+car3 = cars('Russia', '2ndmodel', 2021, 250)
 b = int(input('Какой  автомобиль?'))
 a = int(input('Какое растояние?'))
 if b == 1:
