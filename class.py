@@ -44,6 +44,8 @@ class calcul:
         print(self.a - self.b)
     def slogenie(self):
         print(self.a + self.b)
+    def num(self):
+        
 c=''
 while c != '==':
     c=input()
