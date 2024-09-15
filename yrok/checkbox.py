@@ -1,25 +1,28 @@
 from tkinter import *
-from tkinter import ttk
+def clicer():
+    text.configure(text=checkData.get())
+    if (checkData.get() == 1):
+        window.configure(bg = '#26a110')
+    else:
+        window.configure(bg = '#33c5ff')
 window = Tk()
-
-def fun():
-    tex.configure(text=comboBox.get())
-
-window.title("Listbox")
-# меняем ширину и высоту окна 
+window.title("clicker")
+window.configure(bg = '#33c5ff')
 window.geometry('400x250')
+# button = Button(text="0", command=clicer )
+# button.place(h=61 , w=61 , x=170 , y = 95)
+checkData = IntVar()
+# checkData = StringVar()
+# checkData = BooleanVarVar()
+# checkData = DoubleVar()
 
-arr = ["Python", "JavaScript", "C#", "Java"]
-comboBox = ttk.Combobox(values=arr)
-comboBox.place(x=0 , y = 0)
+check = Checkbutton(text = "check" , variable=checkData , command=clicer)
+check.place( x=0 , y = 5)
+
+text = Label(text=checkData.get())
+text.place(h=11 , x=0 , y = 40)
 
 
 
-
-tex = Label(text="")
-tex.place(h=61 , w=61 , x=170 , y = 15)
-
-button = Button(text="run", command=fun)
-button.place(h=61 , w=61 , x=170 , y = 115)
 
 window.mainloop()

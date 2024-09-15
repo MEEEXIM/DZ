@@ -30,8 +30,9 @@ python_btn.place(x=0 , y = 0)
 
 javascript_btn = Radiobutton(text="javascript", value="javascriptT", variable=lang, command=clicer)
 javascript_btn.place(x=0 , y = 40)
-
+ 
 java_btn = Radiobutton(text='java', value="javaT", variable=lang, command=clicer)
 java_btn.place(x=0 , y = 80)
 
 window.mainloop()
+
