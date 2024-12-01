@@ -56,7 +56,7 @@ def moving_body_snake():
 root = Tk()
 root.geometry('600x500')
 
- 
+
 
 
 
@@ -262,7 +262,7 @@ def fun_start():
                     canV.place(x=-1000,y=-1000)
                     start_b.config(text="restart")
                     with open("record.txt",'r') as file:
-                        ileRead = file.read()
+                        fileRead = file.read()
                     start_text.config(text="ваш рекорд: "+ str(fileRead))
                     print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
 
@@ -284,7 +284,7 @@ start_text = Label(text="ваш рекорд: "+ str(fileRead), font="system 13"
 start_text.place(h=40 , w=160 ,x=300-80 ,y=160)
 
 
-
+ 
 
         
 
